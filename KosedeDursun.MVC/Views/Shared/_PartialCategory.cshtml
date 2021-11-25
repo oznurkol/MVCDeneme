@@ -1,0 +1,15 @@
+﻿@using KosedeDursun.BusinessLayer.Manager
+@using KosedeDursun.Entities
+@{ 
+    CategoryManager cM = new CategoryManager();
+    List<Category> cate = cM.GetCategories();
+}
+
+<ul id="kategoriler" class="menuac">
+    @foreach (Category cat in cate)
+    {
+        <li><a href="/Category/Select/@cat.Id" title="@cat.Description"><div class="glyphicon glyphicon-align-justify"></div> @cat.Title</a></li>
+    }
+    
+    
+</ul>

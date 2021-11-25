@@ -1,0 +1,17 @@
+C:\Users\Ugr\documents\visual studio 2015\Projects\KosedeDursunMVC\KosedeDursun.DataAccessLayer\bin\Debug\KosedeDursun.DataAccessLayer.dll.config
+C:\Users\Ugr\documents\visual studio 2015\Projects\KosedeDursunMVC\KosedeDursun.DataAccessLayer\bin\Debug\KosedeDursun.DataAccessLayer.dll
+C:\Users\Ugr\documents\visual studio 2015\Projects\KosedeDursunMVC\KosedeDursun.DataAccessLayer\bin\Debug\KosedeDursun.DataAccessLayer.pdb
+C:\Users\Ugr\documents\visual studio 2015\Projects\KosedeDursunMVC\KosedeDursun.DataAccessLayer\bin\Debug\EntityFramework.dll
+C:\Users\Ugr\documents\visual studio 2015\Projects\KosedeDursunMVC\KosedeDursun.DataAccessLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Ugr\documents\visual studio 2015\Projects\KosedeDursunMVC\KosedeDursun.DataAccessLayer\bin\Debug\FakeData.dll
+C:\Users\Ugr\documents\visual studio 2015\Projects\KosedeDursunMVC\KosedeDursun.DataAccessLayer\bin\Debug\KosedeDursun.Entities.dll
+C:\Users\Ugr\documents\visual studio 2015\Projects\KosedeDursunMVC\KosedeDursun.DataAccessLayer\bin\Debug\KosedeDursun.Entities.pdb
+C:\Users\Ugr\documents\visual studio 2015\Projects\KosedeDursunMVC\KosedeDursun.DataAccessLayer\bin\Debug\EntityFramework.xml
+C:\Users\Ugr\documents\visual studio 2015\Projects\KosedeDursunMVC\KosedeDursun.DataAccessLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Ugr\documents\visual studio 2015\Projects\KosedeDursunMVC\KosedeDursun.DataAccessLayer\bin\Debug\FakeData.pdb
+C:\Users\Ugr\documents\visual studio 2015\Projects\KosedeDursunMVC\KosedeDursun.DataAccessLayer\obj\Debug\KosedeDursun.DataAccessLayer.csprojResolveAssemblyReference.cache
+C:\Users\Ugr\documents\visual studio 2015\Projects\KosedeDursunMVC\KosedeDursun.DataAccessLayer\obj\Debug\KosedeDursun.DataAccessLayer.dll
+C:\Users\Ugr\documents\visual studio 2015\Projects\KosedeDursunMVC\KosedeDursun.DataAccessLayer\obj\Debug\KosedeDursun.DataAccessLayer.pdb
+C:\Users\Ugr\Documents\Visual Studio 2015\Projects\KosedeDursunMVC\KosedeDursun.DataAccessLayer\bin\Debug\KosedeDursunDBFirst.dll
+C:\Users\Ugr\Documents\Visual Studio 2015\Projects\KosedeDursunMVC\KosedeDursun.DataAccessLayer\bin\Debug\KosedeDursunDBFirst.pdb
+C:\Users\Ugr\Documents\Visual Studio 2015\Projects\KosedeDursunMVC\KosedeDursun.DataAccessLayer\bin\Debug\KosedeDursunDBFirst.dll.config

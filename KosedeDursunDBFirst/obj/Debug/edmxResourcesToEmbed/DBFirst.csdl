@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="KosedeDursunModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Article">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" MaxLength="160" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Text" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="isDraft" Type="Boolean" Nullable="false" />
+    <Property Name="Autor_Id" Type="Int32" Nullable="false" />
+    <Property Name="CreateTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ModifedTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Category_Id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Author" Relationship="Self.FK_Article_Author" FromRole="Article" ToRole="Author" />
+    <NavigationProperty Name="Category" Relationship="Self.FK_Article_Category" FromRole="Article" ToRole="Category" />
+    <NavigationProperty Name="Tag" Relationship="Self.FK_Tag_Article" FromRole="Article" ToRole="Tag" />
+  </EntityType>
+  <EntityType Name="Author">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Firstname" Type="String" MaxLength="15" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Lastname" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CreateTime" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="isAdmin" Type="Boolean" Nullable="false" />
+    <Property Name="isBlock" Type="Boolean" Nullable="false" />
+    <Property Name="isActive" Type="Boolean" Nullable="false" />
+    <Property Name="Guild" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Article" Relationship="Self.FK_Article_Author" FromRole="Author" ToRole="Article" />
+    <NavigationProperty Name="CommentReply" Relationship="Self.FK_CommentReply_Author" FromRole="Author" ToRole="CommentReply" />
+  </EntityType>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CategoryName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="160" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CreateTime" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="ModifedDate" Type="DateTime" Nullable="false" Precision="0" />
+    <NavigationProperty Name="Article" Relationship="Self.FK_Article_Category" FromRole="Category" ToRole="Article" />
+  </EntityType>
+  <EntityType Name="Comment">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Article_Id" Type="Int32" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="70" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Firstname" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Lastname" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Text" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CreateTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ModifedTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="isConfirmation" Type="Boolean" Nullable="false" />
+    <Property Name="IP" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="CommentReply" Relationship="Self.FK_CommentReply_Comment" FromRole="Comment" ToRole="CommentReply" />
+  </EntityType>
+  <EntityType Name="CommentReply">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Author_Id" Type="Int32" Nullable="false" />
+    <Property Name="Text" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CreateTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ModifedTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Comment_Id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Author" Relationship="Self.FK_CommentReply_Author" FromRole="CommentReply" ToRole="Author" />
+    <NavigationProperty Name="Comment" Relationship="Self.FK_CommentReply_Comment" FromRole="CommentReply" ToRole="Comment" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Tag">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Article_Id" Type="Int32" Nullable="false" />
+    <Property Name="Tag1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Article" Relationship="Self.FK_Tag_Article" FromRole="Tag" ToRole="Article" />
+  </EntityType>
+  <Association Name="FK_Article_Author">
+    <End Role="Author" Type="Self.Author" Multiplicity="1" />
+    <End Role="Article" Type="Self.Article" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Author">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Article">
+        <PropertyRef Name="Autor_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Article_Category">
+    <End Role="Category" Type="Self.Category" Multiplicity="1" />
+    <End Role="Article" Type="Self.Article" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Article">
+        <PropertyRef Name="Category_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tag_Article">
+    <End Role="Article" Type="Self.Article" Multiplicity="1" />
+    <End Role="Tag" Type="Self.Tag" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Article">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Tag">
+        <PropertyRef Name="Article_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CommentReply_Author">
+    <End Role="Author" Type="Self.Author" Multiplicity="1" />
+    <End Role="CommentReply" Type="Self.CommentReply" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Author">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CommentReply">
+        <PropertyRef Name="Author_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CommentReply_Comment">
+    <End Role="Comment" Type="Self.Comment" Multiplicity="1" />
+    <End Role="CommentReply" Type="Self.CommentReply" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Comment">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CommentReply">
+        <PropertyRef Name="Comment_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="KosedeDursunEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Article" EntityType="Self.Article" />
+    <EntitySet Name="Author" EntityType="Self.Author" />
+    <EntitySet Name="Category" EntityType="Self.Category" />
+    <EntitySet Name="Comment" EntityType="Self.Comment" />
+    <EntitySet Name="CommentReply" EntityType="Self.CommentReply" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="Tag" EntityType="Self.Tag" />
+    <AssociationSet Name="FK_Article_Author" Association="Self.FK_Article_Author">
+      <End Role="Author" EntitySet="Author" />
+      <End Role="Article" EntitySet="Article" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Article_Category" Association="Self.FK_Article_Category">
+      <End Role="Category" EntitySet="Category" />
+      <End Role="Article" EntitySet="Article" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tag_Article" Association="Self.FK_Tag_Article">
+      <End Role="Article" EntitySet="Article" />
+      <End Role="Tag" EntitySet="Tag" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CommentReply_Author" Association="Self.FK_CommentReply_Author">
+      <End Role="Author" EntitySet="Author" />
+      <End Role="CommentReply" EntitySet="CommentReply" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CommentReply_Comment" Association="Self.FK_CommentReply_Comment">
+      <End Role="Comment" EntitySet="Comment" />
+      <End Role="CommentReply" EntitySet="CommentReply" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

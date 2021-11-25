@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f1616583bccf4cc285ee8c6a63d5ea5f" Name="Diagram1">
+        <EntityTypeShape EntityType="KosedeDursunModel.Article" Width="1.5" PointX="3" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="KosedeDursunModel.Author" Width="1.5" PointX="0.75" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="KosedeDursunModel.Category" Width="1.5" PointX="0.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="KosedeDursunModel.Comment" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="KosedeDursunModel.CommentReply" Width="1.5" PointX="6" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="KosedeDursunModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="KosedeDursunModel.Tag" Width="1.5" PointX="5.25" PointY="8.375" IsExpanded="true" />
+        <AssociationConnector Association="KosedeDursunModel.FK_Article_Author" ManuallyRouted="false" />
+        <AssociationConnector Association="KosedeDursunModel.FK_Article_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="KosedeDursunModel.FK_Tag_Article" ManuallyRouted="false" />
+        <AssociationConnector Association="KosedeDursunModel.FK_CommentReply_Author" ManuallyRouted="false" />
+        <AssociationConnector Association="KosedeDursunModel.FK_CommentReply_Comment" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

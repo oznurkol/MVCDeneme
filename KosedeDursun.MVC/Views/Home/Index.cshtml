@@ -1,0 +1,49 @@
+﻿@using KosedeDursun.Entities
+@model List<Article>
+@{
+    ViewBag.Title = "Index";
+}
+
+@foreach (Article article in Model)
+{
+    <div class="col-md-9 col-md-offset-1 bg-white main-border-4 mgb-30">
+        <h2>@article.Title</h2>
+        <hr>
+        @if (!string.IsNullOrEmpty(article.Text) && article.Text.Length > 300)
+        {
+            @(article.Text.Substring(0, 300) + "...")
+        }
+        else
+        {
+            @article.Text
+        }
+        <hr>
+        <div class="row">
+            <div class="col-md-9">
+                <h6>Tarih: @article.CreatedOn.ToString("dd.MM.yyyy")</h6>
+                <h6>Yazar: @article.Author.Username</h6>
+            </div>
+            <div class="col-md-3">
+                <button type="button" class="btn btn-primary pull-right"><a href="/Home/Article/@article.Id" title="@article.Title" style="color:#ffffff">Devamı İçin >></a></button><br />
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2 main-border-3 bg-white"><a href="/Category/Select/@article.Category.Id" title="@article.Category.Title">@article.Category.Title</a></div>
+}
+<div class="col-md-9 col-md-offset-1" style="align-items:center">
+    <div class="btn-group" role="group">
+        @{
+        if (Url.RequestContext.RouteData.Values["id"] == null || Url.RequestContext.RouteData.Values["id"].ToString() == "0")
+        {
+            <button type="button" class="btn btn-default">0</button>
+            <a href="/Home/Index/1" class="btn btn-default">>></a>
+        }
+        else
+        {
+            <a href="/Home/Index/@(Url.RequestContext.RouteData.Values["id"]==null?"1": $"{(Convert.ToInt32(Url.RequestContext.RouteData.Values["id"].ToString())-1)}")" class="btn btn-default"><<</a>
+            <button type="button" class="btn btn-default">@(Url.RequestContext.RouteData.Values["id"] == null ? "0" : $"{(Convert.ToInt32(Url.RequestContext.RouteData.Values["id"].ToString()))}")</button>
+            <a href="/Home/Index/@(Url.RequestContext.RouteData.Values["id"]==null?"1": $"{(Convert.ToInt32(Url.RequestContext.RouteData.Values["id"].ToString())+1)}")" class="btn btn-default">>></a>
+        }
+    }
+    </div>
+</div>

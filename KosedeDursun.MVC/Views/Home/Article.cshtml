@@ -1,0 +1,21 @@
+﻿@using KosedeDursun.Entities
+@model Article
+@{
+    ViewBag.Title = "Article";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="col-md-9 col-md-offset-1 bg-white main-border-4 mgb-30">
+    <h2>@Model.Title</h2>
+    <hr>
+    @Model.Text
+    <hr>
+    <div class="row">
+        <div class="col-md-9">
+            <h6>Tarih: @Model.CreatedOn.ToString("dd.MM.yyyy")</h6>
+            <h6>Yazar: @Model.Author.Username</h6>
+        </div>
+    </div>
+</div>
+<div class="col-md-2 main-border-3 bg-white">
+    <a href="/Category/Select/@Model.Category.Id" title="@Model.Category.Title">@Model.Category.Title</a>
+</div>

@@ -1,0 +1,5 @@
+C:\Users\Ugr\documents\visual studio 2015\Projects\KosedeDursunMVC\KosedeDursun.Entities\bin\Debug\KosedeDursun.Entities.dll
+C:\Users\Ugr\documents\visual studio 2015\Projects\KosedeDursunMVC\KosedeDursun.Entities\bin\Debug\KosedeDursun.Entities.pdb
+C:\Users\Ugr\documents\visual studio 2015\Projects\KosedeDursunMVC\KosedeDursun.Entities\obj\Debug\KosedeDursun.Entities.csprojResolveAssemblyReference.cache
+C:\Users\Ugr\documents\visual studio 2015\Projects\KosedeDursunMVC\KosedeDursun.Entities\obj\Debug\KosedeDursun.Entities.dll
+C:\Users\Ugr\documents\visual studio 2015\Projects\KosedeDursunMVC\KosedeDursun.Entities\obj\Debug\KosedeDursun.Entities.pdb

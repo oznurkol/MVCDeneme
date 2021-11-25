@@ -1,0 +1,17 @@
+C:\Users\Ugr\documents\visual studio 2015\Projects\KosedeDursunMVC\KosedeDursun.BusinessLayer\bin\Debug\KosedeDursun.BusinessLayer.dll.config
+C:\Users\Ugr\documents\visual studio 2015\Projects\KosedeDursunMVC\KosedeDursun.BusinessLayer\bin\Debug\KosedeDursun.BusinessLayer.dll
+C:\Users\Ugr\documents\visual studio 2015\Projects\KosedeDursunMVC\KosedeDursun.BusinessLayer\bin\Debug\KosedeDursun.BusinessLayer.pdb
+C:\Users\Ugr\documents\visual studio 2015\Projects\KosedeDursunMVC\KosedeDursun.BusinessLayer\bin\Debug\EntityFramework.dll
+C:\Users\Ugr\documents\visual studio 2015\Projects\KosedeDursunMVC\KosedeDursun.BusinessLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Ugr\documents\visual studio 2015\Projects\KosedeDursunMVC\KosedeDursun.BusinessLayer\bin\Debug\KosedeDursun.DataAccessLayer.dll
+C:\Users\Ugr\documents\visual studio 2015\Projects\KosedeDursunMVC\KosedeDursun.BusinessLayer\bin\Debug\KosedeDursun.Entities.dll
+C:\Users\Ugr\documents\visual studio 2015\Projects\KosedeDursunMVC\KosedeDursun.BusinessLayer\bin\Debug\KosedeDursun.DataAccessLayer.pdb
+C:\Users\Ugr\documents\visual studio 2015\Projects\KosedeDursunMVC\KosedeDursun.BusinessLayer\bin\Debug\KosedeDursun.Entities.pdb
+C:\Users\Ugr\documents\visual studio 2015\Projects\KosedeDursunMVC\KosedeDursun.BusinessLayer\bin\Debug\EntityFramework.xml
+C:\Users\Ugr\documents\visual studio 2015\Projects\KosedeDursunMVC\KosedeDursun.BusinessLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Ugr\documents\visual studio 2015\Projects\KosedeDursunMVC\KosedeDursun.BusinessLayer\obj\Debug\KosedeDursun.BusinessLayer.dll
+C:\Users\Ugr\documents\visual studio 2015\Projects\KosedeDursunMVC\KosedeDursun.BusinessLayer\obj\Debug\KosedeDursun.BusinessLayer.pdb
+C:\Users\Ugr\documents\visual studio 2015\Projects\KosedeDursunMVC\KosedeDursun.BusinessLayer\obj\Debug\KosedeDursun.BusinessLayer.csprojResolveAssemblyReference.cache
+C:\Users\Ugr\Documents\Visual Studio 2015\Projects\KosedeDursunMVC\KosedeDursun.BusinessLayer\bin\Debug\KosedeDursun.DataAccessLayer.dll.config
+C:\Users\Ugr\Documents\Visual Studio 2015\Projects\KosedeDursunMVC\KosedeDursun.BusinessLayer\bin\Debug\FakeData.dll
+C:\Users\Ugr\Documents\Visual Studio 2015\Projects\KosedeDursunMVC\KosedeDursun.BusinessLayer\bin\Debug\FakeData.pdb

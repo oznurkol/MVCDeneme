@@ -1,0 +1,10 @@
+C:\Users\Ugr\Documents\Visual Studio 2015\Projects\KosedeDursunMVC\KosedeDursunDBFirst\bin\Debug\KosedeDursunDBFirst.dll.config
+C:\Users\Ugr\Documents\Visual Studio 2015\Projects\KosedeDursunMVC\KosedeDursunDBFirst\bin\Debug\KosedeDursunDBFirst.dll
+C:\Users\Ugr\Documents\Visual Studio 2015\Projects\KosedeDursunMVC\KosedeDursunDBFirst\bin\Debug\KosedeDursunDBFirst.pdb
+C:\Users\Ugr\Documents\Visual Studio 2015\Projects\KosedeDursunMVC\KosedeDursunDBFirst\bin\Debug\EntityFramework.dll
+C:\Users\Ugr\Documents\Visual Studio 2015\Projects\KosedeDursunMVC\KosedeDursunDBFirst\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Ugr\Documents\Visual Studio 2015\Projects\KosedeDursunMVC\KosedeDursunDBFirst\bin\Debug\EntityFramework.xml
+C:\Users\Ugr\Documents\Visual Studio 2015\Projects\KosedeDursunMVC\KosedeDursunDBFirst\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Ugr\Documents\Visual Studio 2015\Projects\KosedeDursunMVC\KosedeDursunDBFirst\obj\Debug\KosedeDursunDBFirst.csprojResolveAssemblyReference.cache
+C:\Users\Ugr\Documents\Visual Studio 2015\Projects\KosedeDursunMVC\KosedeDursunDBFirst\obj\Debug\KosedeDursunDBFirst.dll
+C:\Users\Ugr\Documents\Visual Studio 2015\Projects\KosedeDursunMVC\KosedeDursunDBFirst\obj\Debug\KosedeDursunDBFirst.pdb
